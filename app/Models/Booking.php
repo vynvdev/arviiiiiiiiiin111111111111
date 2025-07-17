@@ -18,6 +18,9 @@ class Booking extends Model
         'booking_date',
         'notes',
     ];
+    protected $casts = [
+    'booking_date' => 'datetime',
+    ];
 
     /**
      * Relationship: a booking belongs to a user.
